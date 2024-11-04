@@ -4,7 +4,10 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"story:dev": "pnpm --filter tiny-forge-ui story:dev",
+    "story:build": "pnpm --filter tiny-forge-ui story:build",
+    "story:preview": "pnpm --filter tiny-forge-ui story:preview"
 	},
 	"keywords": [],
 	"author": "",

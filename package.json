@@ -6,13 +6,16 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"story:dev": "pnpm --filter tiny-forge-ui story:dev",
-    "story:build": "pnpm --filter tiny-forge-ui story:build",
-    "story:preview": "pnpm --filter tiny-forge-ui story:preview"
+		"story:build": "pnpm --filter tiny-forge-ui story:build",
+		"story:preview": "pnpm --filter tiny-forge-ui story:preview"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4"
+	},
+	"dependencies": {
+		"@changesets/cli": "^2.27.9"
 	}
 }

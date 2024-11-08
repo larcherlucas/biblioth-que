@@ -5,5 +5,4 @@ export default defineConfig({
   plugins: [
     HstVue(),
   ],
-  storyMatch: ['**/*.stories.vue'],
 })

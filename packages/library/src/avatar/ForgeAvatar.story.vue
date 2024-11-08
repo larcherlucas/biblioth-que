@@ -11,5 +11,11 @@ import ForgeAvatar from './ForgeAvatar.vue'
         @status-change="(e) => console.log(e.status)"
       />
     </Variant>
+    <Variant title="No Correct Src">
+      <ForgeAvatar
+        name="Sybren Willemot"
+        src="badUrl"
+      />
+    </Variant>
   </Story>
 </template>

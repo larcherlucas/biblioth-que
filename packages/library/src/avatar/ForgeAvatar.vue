@@ -56,6 +56,7 @@ const getInitials = computed(() =>
   font-weight: 600;
   color: white;
   background-color: #777;
+  border-radius: inherit;
 }
 
 [data-scope='avatar'][data-part='fallback']:not([hidden]) {

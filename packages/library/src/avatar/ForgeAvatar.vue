@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import {
-  Avatar,
-  type AvatarRootEmits,
-  type AvatarRootProps,
-  useForwardPropsEmits
+	Avatar,
+	type AvatarRootEmits,
+	type AvatarRootProps,
+	useForwardPropsEmits,
 } from '@ark-ui/vue'
 import { computed } from 'vue'
 
 export interface AvatarProps extends AvatarRootProps {
-  src: string
-  name: string
+	src: string
+	name: string
 }
 
 const props = defineProps<AvatarProps>()
@@ -18,12 +18,12 @@ const emits = defineEmits<AvatarRootEmits>()
 const forwarded = useForwardPropsEmits(props, emits)
 
 const getInitials = computed(() =>
-  props.name
-    .split(' ')
-    .map((part) => part[0])
-    .slice(0, 2)
-    .join('')
-    .toUpperCase()
+	props.name
+		.split(' ')
+		.map((part) => part[0])
+		.slice(0, 2)
+		.join('')
+		.toUpperCase(),
 )
 </script>
 

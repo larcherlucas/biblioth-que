@@ -2,6 +2,28 @@
 	"name": "tiny-forge-ui",
 	"version": "0.1.0",
 	"type": "module",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "main": "./dist/lib.umd.cjs",
+  "module": "./dist/lib.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "require": "./src/index.ts"
+    },
+    "./style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    },
+    "./js": {
+      "types": "./dist/types/main.d.ts",
+      "import": "./dist/lib.js",
+      "require": "./dist/lib.umd.cjs"
+    }
+  },
 	"scripts": {
 		"dev": "vite",
 		"build": "vue-tsc -b && vite build",

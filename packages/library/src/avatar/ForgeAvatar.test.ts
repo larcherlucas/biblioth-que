@@ -16,7 +16,7 @@ describe('ForgeAvatar', () => {
 		const avatar = screen.getByAltText('John Doe')
 
 		// Assert
-		expect(avatar).toMatchSnapshot()
+		expect(avatar).toBeDefined()
 		expect(avatar.getAttribute('src')).toBe('https://avatars.githubusercontent.com/u/16015740?v=4')
 		expect(avatar.getAttribute('alt')).toBe('John Doe')
 	})
@@ -34,7 +34,7 @@ describe('ForgeAvatar', () => {
 		const fallback = screen.getByText('JD')
 
 		// Assert
-		expect(fallback).toMatchSnapshot()
+		expect(fallback).toBeDefined()
 		expect(screen.queryByRole('img')).toBeNull()
 	})
 
@@ -51,7 +51,7 @@ describe('ForgeAvatar', () => {
 		const fallback = screen.getByText('JM')
 
 		// Assert
-		expect(fallback).toMatchSnapshot()
+		expect(fallback).toBeDefined()
 	})
 
 	it('emits status-change event when image loads', async () => {

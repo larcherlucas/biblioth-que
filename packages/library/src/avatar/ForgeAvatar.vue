@@ -17,14 +17,17 @@ const emits = defineEmits<AvatarRootEmits>()
 
 const forwarded = useForwardPropsEmits(props, emits)
 
-const getInitials = computed(() =>
-	props.name
-		.split(' ')
-		.map((part) => part[0])
-		.slice(0, 2)
-		.join('')
-		.toUpperCase(),
-)
+const getInitials = computed(() => {
+  if (props.name) {
+    return props.name
+      .split(' ')
+      .map((part) => part[0])
+      .slice(0, 2)
+      .join('')
+      .toUpperCase()
+  } 
+  throw new Error('The prop "name" is required for ForgeAvatar')
+})
 </script>
 
 <template>

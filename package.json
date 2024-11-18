@@ -10,9 +10,9 @@
 		"story:build": "pnpm --filter tiny-forge-ui story:build",
 		"story:preview": "pnpm --filter tiny-forge-ui story:preview",
 		"playground:build": "pnpm --filter playground build",
-    "playground:dev": "pnpm --filter playground dev",
-    "playground:generate": "pnpm --filter playground generate",
-    "playground:preview": "pnpm --filter playground preview"
+		"playground:dev": "pnpm --filter playground dev",
+		"playground:generate": "pnpm --filter playground generate",
+		"playground:preview": "pnpm --filter playground preview"
 	},
 	"keywords": [],
 	"author": "",
@@ -21,6 +21,7 @@
 		"@biomejs/biome": "1.9.4"
 	},
 	"dependencies": {
+		"@ark-ui/vue": "^4.4.1",
 		"@changesets/cli": "^2.27.9"
 	}
 }

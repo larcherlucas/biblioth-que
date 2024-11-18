@@ -7,25 +7,25 @@ describe('ForgeAvatar', () => {
 		// Arrange
 		render(ForgeAvatar, {
 			props: {
-				name: 'John Doe',
-				src: 'https://avatars.githubusercontent.com/u/16015740?v=4',
+				name: 'Lucas larcher',
+				src: 'https://avatars.githubusercontent.com/u/152268582?v=4',
 			},
 		})
 
 		// Act
-		const avatar = screen.getByAltText('John Doe')
+		const avatar = screen.getByAltText('Lucas larcher')
 
 		// Assert
 		expect(avatar).toBeDefined()
-		expect(avatar.getAttribute('src')).toBe('https://avatars.githubusercontent.com/u/16015740?v=4')
-		expect(avatar.getAttribute('alt')).toBe('John Doe')
+		expect(avatar.getAttribute('src')).toBe('https://avatars.githubusercontent.com/u/152268582?v=4')
+		expect(avatar.getAttribute('alt')).toBe('Lucas larcher')
 	})
 
 	it('renders initials when src is not provided or image fails to load', () => {
 		// Arrange
 		render(ForgeAvatar, {
 			props: {
-				name: 'John Doe',
+				name: 'Lucas larcher',
 				src: '',
 			},
 		})
@@ -58,13 +58,13 @@ describe('ForgeAvatar', () => {
 		// Arrange
 		const { emitted } = render(ForgeAvatar, {
 			props: {
-				name: 'John Doe',
-				src: 'https://avatars.githubusercontent.com/u/16015740?v=4',
+				name: 'Lucas larcher',
+				src: 'https://avatars.githubusercontent.com/u/152268582?v=4',
 			},
 		})
 
 		// Act
-		const avatar = screen.getByAltText('John Doe')
+		const avatar = screen.getByAltText('Lucas larcher')
 		// Manually trigger load event
 		await avatar.dispatchEvent(new Event('load'))
 
@@ -76,13 +76,13 @@ describe('ForgeAvatar', () => {
 		// Arrange
 		const { emitted } = render(ForgeAvatar, {
 			props: {
-				name: 'John Doe',
+				name: 'Lucas larcher',
 				src: 'badImgSrc',
 			},
 		})
 
 		// Act
-		const avatar = screen.getByAltText('John Doe')
+		const avatar = screen.getByAltText('Lucas larcher')
 		// Manually trigger error event
 		await avatar.dispatchEvent(new Event('error'))
 

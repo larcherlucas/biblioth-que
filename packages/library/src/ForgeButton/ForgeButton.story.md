@@ -16,3 +16,4 @@ Le composant **ForgeButton** est un bouton réutilisable offrant plusieurs varia
 | `click`   | Déclenché lorsque l'utilisateur clique sur le bouton. |
 
 ## Exemples
+ 

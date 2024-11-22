@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ForgeAvatar } from 'tiny-forge-ui'
+
 </script>
 
 <template>
